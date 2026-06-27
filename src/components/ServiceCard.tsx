@@ -206,15 +206,6 @@ export default function ServiceCard({ service, index }: ServiceCardProps): React
             </span>
             {service.category}
           </span>
-          
-          <a
-            href={`https://wa.me/91${personalInfo.whatsappNumber}?text=Hi%20Chandan,%20I'm%20interested%20in%20your%20${encodeURIComponent(service.title)}%20service!`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] font-mono text-[#e63946]/60 group-hover:text-[#e63946] tracking-wider transition-all duration-300 flex items-center gap-1 uppercase font-bold hover:underline"
-          >
-            GET IN TOUCH →
-          </a>
         </div>
       </div>
     </div>

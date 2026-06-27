@@ -13,8 +13,8 @@ export const personalInfo = {
   budget: "₹10 CR+ Budget Managed",
   shortBio: "3 years of experience. 120+ clients. Campaigns that convert.",
   detailedBio: "I am currently pursuing my BCA at Arka Jain University. Passionate about data-driven performance marketing, I have successfully designed, optimized, and scaled advertising campaigns for over 120 clients. My expertise spans Meta Ads (Facebook & Instagram), Google Search & YouTube campaigns, SEO, lead generation, and funnel building. I love turning attention into real, measurable business revenue.",
-  whatsappNumber: "911099767",
-  phone: "911099767",
+  whatsappNumber: "9110907676",
+  phone: "9110907676",
   email: "chandanmahanty11@gmail.com",
   linkedin: "https://www.linkedin.com/in/chandan-mahanty-8198612a7",
   location: "India"
