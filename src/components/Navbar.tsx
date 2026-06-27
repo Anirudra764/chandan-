@@ -75,14 +75,14 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             transition={{ delay: 1.5, duration: 1.0 }}
             className="flex items-center space-x-3 relative overflow-hidden py-1 px-2 rounded"
           >
-            <div className="text-3xl md:text-4xl font-display font-black tracking-tighter text-white">
+            <div className="text-2xl sm:text-3xl md:text-4xl font-display font-black tracking-tighter text-white">
               CM<span className="text-[#e63946]">.</span>
             </div>
-            <div className="flex flex-col border-l-2 border-white/20 pl-4">
-              <span className="font-display font-black text-xs md:text-sm tracking-[0.22em] text-white/90 transition-colors duration-300">
+            <div className="flex flex-col border-l-2 border-white/20 pl-3">
+              <span className="font-display font-black text-[10px] sm:text-xs md:text-sm tracking-[0.22em] text-white/90 transition-colors duration-300">
                 CHANDAN MAHANTY
               </span>
-              <span className="font-mono text-[9px] md:text-[10px] text-[#e63946] tracking-[0.25em] font-bold">
+              <span className="font-mono text-[8px] sm:text-[9px] md:text-[10px] text-[#e63946] tracking-[0.25em] font-bold">
                 META ADS PARTNER
               </span>
             </div>

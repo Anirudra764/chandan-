@@ -51,7 +51,7 @@ export const stats = [
   {
     id: "stat-4",
     value: 100,
-    suffix: "k+",
+    suffix: "+",
     label: "Leads Generated",
     description: "High-quality converting business prospects",
     accent: "white",

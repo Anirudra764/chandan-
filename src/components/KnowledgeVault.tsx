@@ -183,8 +183,8 @@ export default function KnowledgeVault({ certifications }: KnowledgeVaultProps):
           </p>
         </div>
 
-        {/* 5. MAIN HOLOGRAPHIC VAULT ORBIT DISPLAY */}
-        <div className="relative w-full min-h-[500px] flex items-center justify-center py-10 px-4">
+        {/* 5. MAIN HOLOGRAPHIC VAULT ORBIT DISPLAY (Desktop/Tablet) */}
+        <div className="hidden sm:flex relative w-full min-h-[500px] items-center justify-center py-10 px-4">
           
           {/* Orbital viewport boundary with glow */}
           <div className="absolute w-[320px] h-[320px] sm:w-[480px] sm:h-[480px] md:w-[560px] md:h-[560px] rounded-full border border-red-500/10 flex items-center justify-center pointer-events-none">
@@ -291,6 +291,33 @@ export default function KnowledgeVault({ certifications }: KnowledgeVaultProps):
 
           </div>
 
+        </div>
+
+        {/* 5. MOBILE KNOWLEDGE LIST DISPLAY (Mobile Only) */}
+        <div className="flex sm:hidden flex-col gap-6 w-full max-w-sm px-4 py-4 items-center justify-center relative">
+          <div className="flex flex-col items-center text-center p-4 rounded-2xl bg-[#0d0d0d]/90 border border-red-500/20 backdrop-blur-xl w-full mb-2 shadow-[0_0_20px_rgba(230,57,70,0.1)]">
+            <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#1a0505] border border-[#3d1515] text-[#e63946] mb-2">
+              <Lock size={16} className="animate-pulse" />
+            </div>
+            <span className="font-mono text-[8px] tracking-widest text-[#666] uppercase">SYS_LOCK</span>
+            <span className="text-[10px] font-bold text-white tracking-widest mt-1 font-mono">
+              VERIFIED KNOWLEDGE ASSETS
+            </span>
+          </div>
+          <CapsuleCard
+            cert={certifications[0]}
+            index={0}
+            isHovered={hoveredIndex === 0}
+            onHoverChange={(h) => setHoveredIndex(h ? 0 : null)}
+            particles={hoveredIndex === 0 ? particles : []}
+          />
+          <CapsuleCard
+            cert={certifications[1]}
+            index={1}
+            isHovered={hoveredIndex === 1}
+            onHoverChange={(h) => setHoveredIndex(h ? 1 : null)}
+            particles={hoveredIndex === 1 ? particles : []}
+          />
         </div>
 
         {/* 6. BOTTOM TRUST BADGES ROW */}

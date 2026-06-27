@@ -516,7 +516,7 @@ export default function App() {
                 </div>
 
                 {/* Massive Bold Full Name - Letter by letter rise with blur-to-sharp & reflection */}
-                <h1 className="section-heading font-display font-black text-7xl sm:text-8xl xl:text-[6.5rem] 2xl:text-[7.5rem] tracking-tighter text-white leading-[0.85] mb-4 uppercase">
+                <h1 className="section-heading font-display font-black text-5xl sm:text-8xl xl:text-[6.5rem] 2xl:text-[7.5rem] tracking-tighter text-white leading-[0.85] mb-4 uppercase">
                   {"CHANDAN".split("").map((char, index) => (
                     <motion.span
                       key={index}
@@ -798,8 +798,8 @@ export default function App() {
                         }
                       }
                     }}
-                    style={{ fontSize: 'clamp(48px, 6vw, 80px)', wordBreak: 'keep-all' }}
-                    className="section-heading font-display font-black text-white tracking-tight uppercase leading-none text-center"
+                    style={{ fontSize: 'clamp(32px, 6vw, 80px)', wordBreak: 'keep-all' }}
+                    className="section-heading font-display font-black text-white tracking-tight uppercase leading-none text-center text-3xl sm:text-5xl md:text-7xl lg:text-8xl"
                   >
                     {"MILESTONES OF SUCCESS".split(" ").map((word, wIdx) => (
                       <span key={wIdx} className="inline-block whitespace-nowrap mr-[0.3em] last:mr-0">
@@ -879,10 +879,12 @@ export default function App() {
                   ADS / MARKETING CAPABILITIES
                 </span>
                 <h2 
-                  style={{ fontSize: 'clamp(48px, 6vw, 80px)', wordBreak: 'keep-all' }}
-                  className="section-heading font-display font-black text-white tracking-tight leading-none mb-5 text-center uppercase"
+                  style={{ fontSize: 'clamp(32px, 6vw, 80px)', wordBreak: 'keep-all', textAlign: 'center', textWrap: 'balance', whiteSpace: 'normal' }}
+                  className="section-heading font-display font-black text-white tracking-tight leading-[1.1] mb-5 text-center uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl"
                 >
-                  High-Performance Solutions
+                  <span className="whitespace-nowrap">HIGH-PERFORMANCE</span>
+                  <br className="sm:hidden" />{" "}
+                  <span className="whitespace-nowrap">SOLUTIONS</span>
                 </h2>
                 <p className="section-body font-sans text-[18px] text-neutral-300 leading-[1.8] max-w-[560px] mx-auto text-center">
                   Each service is designed and scaled as a direct revenue builder, never a passive marketing cost.
@@ -999,7 +1001,7 @@ export default function App() {
                   
                   {/* Word-by-Word Slide Up Heading with 120ms stagger & blur reveal */}
                   <div className="relative py-1">
-                    <h2 className="section-heading font-display font-black text-5xl md:text-[80px] text-white tracking-tight leading-[1.0] flex flex-wrap gap-x-4">
+                    <h2 className="section-heading font-display font-black text-4xl sm:text-6xl md:text-[80px] text-white tracking-tight leading-[1.0] flex flex-wrap gap-x-4">
                       {["Featured", "Campaigns"].map((word, idx) => (
                         <span key={idx} className="relative overflow-hidden inline-block py-1">
                           <motion.span
