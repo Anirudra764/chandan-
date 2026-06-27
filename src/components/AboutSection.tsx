@@ -188,7 +188,7 @@ function SkillRow({ skill, index, trigger }: { key?: React.Key; skill: Skill; in
 
 export default function AboutSection({ personalInfo, skillProgress }: AboutSectionProps): React.JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [hasInView, setHasInView] = useState(true);
+  const [hasInView, setHasInView] = useState(false);
   const [trafficCountComplete, setTrafficCountComplete] = useState(false);
 
   // IntersectionObserver setup

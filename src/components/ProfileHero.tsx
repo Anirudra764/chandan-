@@ -23,7 +23,6 @@ export default function ProfileHero({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [ringDrawingComplete, setRingDrawingComplete] = useState(false);
-  const [checkMarkDraw, setCheckMarkDraw] = useState(false);
 
   // Orbit & Sparks Particle System in Canvas
   useEffect(() => {
@@ -149,15 +148,9 @@ export default function ProfileHero({
 
     draw();
 
-    // Trigger checkmark drawing when badge slides up
-    const badgeTimer = setTimeout(() => {
-      setCheckMarkDraw(true);
-    }, 5900);
-
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener('resize', handleResize);
-      clearTimeout(badgeTimer);
     };
   }, [isHovered, ringDrawingComplete]);
 
@@ -256,53 +249,6 @@ export default function ProfileHero({
         </svg>
       </div>
 
-      {/* SLOW ROTATING COMPONENT (Starts after drawing complete) */}
-      {ringDrawingComplete && (
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: isHovered ? 12 : 36, ease: "linear" }}
-          className="absolute inset-1 border border-dashed border-[#e63946]/30 rounded-full pointer-events-none z-20"
-        />
-      )}
-
-      {/* BOTTOM HUD STATUS BADGE ("Campaigns Active") */}
-      <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, y: 30, x: "-50%" }}
-          animate={{ opacity: 1, y: 0, x: "-50%" }}
-          transition={{
-            delay: 5.8,
-            type: "spring",
-            stiffness: 90,
-            damping: 14
-          }}
-          className="absolute bottom-1 left-1/2 translate-x-1/2 bg-neutral-950/90 backdrop-blur-xl border border-emerald-500/30 px-4 py-2.5 rounded-xl flex items-center space-x-2.5 shadow-[0_4px_30px_rgba(16,185,129,0.15)] z-30"
-        >
-          {/* Animated checkmark icon */}
-          <div className="relative w-3.5 h-3.5 flex items-center justify-center bg-emerald-500/20 rounded-full">
-            <svg
-              className="w-2.5 h-2.5 text-emerald-400"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="3.5"
-            >
-              <motion.path
-                initial={{ pathLength: 0 }}
-                animate={checkMarkDraw ? { pathLength: 1 } : { pathLength: 0 }}
-                transition={{ delay: 6.1, duration: 0.5, ease: "easeOut" }}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <div className="absolute inset-0 bg-emerald-500 rounded-full animate-ping opacity-25" />
-          </div>
-          <span className="font-mono text-[9px] text-white font-bold tracking-widest uppercase">
-            ✓ Campaigns Active
-          </span>
-        </motion.div>
-      </AnimatePresence>
     </div>
   );
 }

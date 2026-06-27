@@ -98,7 +98,7 @@ const getToolMeta = (name: string) => {
 
 export default function TechStackSection({ tools }: TechStackSectionProps): React.JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [hasInView, setHasInView] = useState(true);
+  const [hasInView, setHasInView] = useState(false);
   const [isTabVisible, setIsTabVisible] = useState(true);
   const [animateProficiency, setAnimateProficiency] = useState(false);
 
