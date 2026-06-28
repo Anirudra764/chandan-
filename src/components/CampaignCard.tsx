@@ -310,27 +310,6 @@ export default function CampaignCard({ cs, index, onClick }: CampaignCardProps) 
             {cs.subtitle}
           </p>
         </div>
-
-        {/* Case Study CTA Link (Z Depth: 25px) */}
-        <div 
-          className="flex flex-col inline-block self-start mt-2 group/link"
-          style={{ transform: 'translateZ(25px)' }}
-        >
-          <span className="flex items-center text-[13px] text-[#e63946] font-mono font-bold tracking-[2px] uppercase">
-            VIEW CASE STUDY 
-            <motion.span 
-              animate={{ x: isHovered ? 4 : 0 }}
-              transition={{ duration: 0.2 }}
-              className="ml-1.5"
-            >
-              →
-            </motion.span>
-          </span>
-          <div 
-            className="h-[1px] bg-[#e63946] transition-all duration-300 origin-left" 
-            style={{ width: isHovered ? '100%' : '0%' }}
-          />
-        </div>
       </div>
     </motion.div>
   );
