@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Facebook, Search, Layout, Cpu, Sparkles, MessageSquare } from 'lucide-react';
+import { Facebook, Search, Layout, Cpu, Sparkles, MessageSquare, Youtube } from 'lucide-react';
 import { Service } from '../types';
 import { personalInfo } from '../data';
 
@@ -17,7 +17,8 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   Layout,
   Cpu,
   Sparkles,
-  MessageSquare
+  MessageSquare,
+  Youtube
 };
 
 export default function ServiceCard({ service, index }: ServiceCardProps): React.JSX.Element {

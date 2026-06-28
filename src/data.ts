@@ -1,4 +1,17 @@
 import { CaseStudy, Service, Tool, Certification } from './types';
+import metaAdsImg from './assets/images/give_me_a_clear_cut_202606281122.jpeg';
+import youtubeAdsImg from './assets/images/Create_a_premium_3D_isometric_202606281137.jpeg';
+import websiteImg from './assets/images/website.jpeg';
+import shopyfyImg from './assets/images/shopyfy.jpeg';
+import telegramImg from './assets/images/telegram.jpeg';
+import metaCampaignImg from './assets/images/meta.jpeg';
+import instagramImg from './assets/images/instagram.jpeg';
+import dpImg from './assets/images/dp.jpeg';
+import bsImg from './assets/images/bs.jpeg';
+import iitImg from './assets/images/iit.JPG';
+import weImg from './assets/images/we.jpeg';
+import bImg from './assets/images/b.jpeg';
+import adsImg from './assets/images/ads.jpeg';
 
 export const personalInfo = {
   name: "CHANDAN MAHANTY",
@@ -85,17 +98,9 @@ export const services: Service[] = [
     category: "Paid Traffic",
     isPrimary: true,
     iconName: "Facebook",
-    imageUrl: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80"
+    imageUrl: metaAdsImg
   },
-  {
-    id: "srv-google",
-    title: "Google Search & YouTube Ads",
-    description: "Intent-based search marketing and high-impact pre-roll YouTube video ads targeting customers actively looking for your specific services.",
-    category: "Paid Traffic",
-    isPrimary: false,
-    iconName: "Search",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-  },
+
   {
     id: "srv-web",
     title: "Professional Websites",
@@ -103,7 +108,7 @@ export const services: Service[] = [
     category: "Funnel & Web",
     isPrimary: false,
     iconName: "Layout",
-    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+    imageUrl: bImg
   },
   {
     id: "srv-funnel",
@@ -112,7 +117,7 @@ export const services: Service[] = [
     category: "Funnel & Web",
     isPrimary: false,
     iconName: "Cpu",
-    imageUrl: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80"
+    imageUrl: shopyfyImg
   },
   {
     id: "srv-branding",
@@ -121,7 +126,7 @@ export const services: Service[] = [
     category: "Organic & Brand",
     isPrimary: false,
     iconName: "Sparkles",
-    imageUrl: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=800&q=80"
+    imageUrl: bsImg
   },
   {
     id: "srv-outreach",
@@ -130,7 +135,16 @@ export const services: Service[] = [
     category: "Organic & Brand",
     isPrimary: false,
     iconName: "MessageSquare",
-    imageUrl: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=800&q=80"
+    imageUrl: weImg
+  },
+  {
+    id: "srv-youtube",
+    title: "YouTube Ads",
+    description: "High-impact video ads targeting customers on YouTube to generate high quality leads and scale conversions.",
+    category: "Paid Traffic",
+    isPrimary: false,
+    iconName: "Youtube",
+    imageUrl: youtubeAdsImg
   }
 ];
 
@@ -142,7 +156,7 @@ export const caseStudies: CaseStudy[] = [
     clientName: "E-Commerce & Lead-Gen Brand",
     category: "Meta Ads",
     platform: "Facebook & Instagram Ads Manager",
-    thumbnailUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: metaCampaignImg,
     resultSummary: "+70% Lead Volume | -35% CPL reduction",
     goal: "Acquire high-intent prospective buyers while keeping Cost-Per-Lead (CPL) under strict client budgets.",
     strategy: [
@@ -164,7 +178,7 @@ export const caseStudies: CaseStudy[] = [
     clientName: "Premium Fin-Tech Advisory Group",
     category: "Branding",
     platform: "Meta & Telegram Ads Network",
-    thumbnailUrl: "https://images.unsplash.com/photo-1614680376593-902f74fa0d41?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: telegramImg,
     resultSummary: "80% Member Growth | 4.5% Engagement Rate",
     goal: "Drive high-retention members into a financial research community seeking daily micro-insights.",
     strategy: [
@@ -185,7 +199,7 @@ export const caseStudies: CaseStudy[] = [
     clientName: "Dr. K. Sharma (Wellness Consultant)",
     category: "Branding",
     platform: "Instagram Business Platform",
-    thumbnailUrl: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: instagramImg,
     resultSummary: "1.2M+ Reach | +45% Follower Growth",
     goal: "Build organic authority and convert casual visual viewers into private telehealth clients.",
     strategy: [
@@ -206,7 +220,7 @@ export const caseStudies: CaseStudy[] = [
     clientName: "SaaS Outreach Utility",
     category: "Google Ads",
     platform: "Google Performance Max & Search Ads",
-    thumbnailUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: dpImg,
     resultSummary: "4.2x ROAS | 500+ App Installs",
     goal: "Generate consistent, predictable software purchases from technical B2B agencies.",
     strategy: [
@@ -227,7 +241,7 @@ export const caseStudies: CaseStudy[] = [
     clientName: "E-Summit, IIT Bombay Division",
     category: "Google Ads",
     platform: "Google Search & YouTube Network",
-    thumbnailUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: iitImg,
     resultSummary: "25k+ Registrations | +25% Target Beat",
     goal: "Drive nationwide registrations for E-Summit tech-entrepreneur events in restricted timelines.",
     strategy: [
@@ -243,12 +257,12 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "case-freelance",
-    title: "Freelance Client SEO",
+    title: "Ads Campaigns for Event Promotion",
     subtitle: "Rank 1-3 domination for high-intent keywords",
     clientName: "Elite Dental Care / local businesses",
     category: "SEO",
     platform: "Google Search Engine Rankings",
-    thumbnailUrl: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
+    thumbnailUrl: adsImg,
     resultSummary: "Rank #1-3 | 120%+ Organic Traffic Increase",
     goal: "Dominate local dental search queries over well-funded directory competitors.",
     strategy: [
